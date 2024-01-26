@@ -1,11 +1,15 @@
 {
   "name": "my-package",
   "scripts": {
-    "build": "babel src -d lib",
-    "prebuild": "jest"
+    "start": "webpack-dev-server --mode development",
+    "test": "(eslint lib || true) && jest"
   },
   "dependencies": {
     "dotenv": "^16.4.1",
-    "mongodb": "^6.3.0"
+    "mongodb": "^6.3.0",
+    "react-scripts": "^5.0.1"
+  },
+  "devDependencies": {
+    "webpack-cli": "^5.1.4"
   }
 }
