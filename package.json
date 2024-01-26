@@ -1,13 +1,11 @@
 {
   "scripts": {
-    "start": "expo start",
-    "android": "expo start --android",
-    "ios": "expo start --ios",
-    "web": "expo start --web",
-    "eject": "expo eject"
-  },"devDependencies": {
-    "babel-preset-expo": "^7.0.0"
-  },
+    "ios": "react-native run-ios",
+    "start": "node node_modules/react-native/local-cli/cli.js start",
+    "test": "jest",
+    "test:e2e":"npm run test",
+    "test:e2e:build":"npm run build"
+},
   "dependencies": {
     "dotenv": "^16.4.1",
     "mongodb": "^6.3.0"
