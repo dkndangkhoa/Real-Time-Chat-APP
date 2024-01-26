@@ -1,4 +1,13 @@
 {
+  "scripts": {
+    "start": "expo start",
+    "android": "expo start --android",
+    "ios": "expo start --ios",
+    "web": "expo start --web",
+    "eject": "expo eject"
+  },"devDependencies": {
+    "babel-preset-expo": "^7.0.0"
+  },
   "dependencies": {
     "dotenv": "^16.4.1",
     "mongodb": "^6.3.0"
