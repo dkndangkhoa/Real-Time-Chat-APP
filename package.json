@@ -1,11 +1,9 @@
 {
+  "name": "my-package",
   "scripts": {
-    "ios": "react-native run-ios",
-    "start": "node node_modules/react-native/local-cli/cli.js start",
-    "test": "jest",
-    "test:e2e":"npm run test",
-    "test:e2e:build":"npm run build"
-},
+    "build": "babel src -d lib",
+    "prebuild": "jest"
+  },
   "dependencies": {
     "dotenv": "^16.4.1",
     "mongodb": "^6.3.0"
